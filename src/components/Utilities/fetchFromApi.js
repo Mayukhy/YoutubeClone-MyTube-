@@ -9,7 +9,7 @@ const options = {
   },
   headers: {
     'content-type': 'application/octet-stream',
-    'X-RapidAPI-Key': '7931417b8emsh656026bcb50256fp1b37a3jsnce31e03880c9',
+    'X-RapidAPI-Key': 'use your API key here',
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
   }
 };
