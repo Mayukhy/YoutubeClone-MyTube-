@@ -48,12 +48,12 @@ export default function VideoDetail() {
       }}>Loading...</Stack>:
     <Box className='detailbackground' minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+          <Box sx={{ width: "100%", position: {md:"sticky",xs:'static' ,sm:'static'} , top: "86px" }}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls playing={true} />
             <Typography sx={{
               color:"whitesmoke",
               marginLeft:'40px',
-              fontSize:'25px',
+              fontSize:{ md:'25px',xs:'20px'},
               padding:'10px 0px'
             }}>
               {videoDetail.snippet.title}
@@ -79,7 +79,7 @@ export default function VideoDetail() {
                image={ChannelDetail?.snippet?.thumbnails?.high?.url}
                />
               </Card> */}
-              <div style={{
+              {/* <div style={{
                 borderRadius: '50%', height: '50px', width: '50px', border: '2px solid #e3e3e3'
               }}>
                 <img style={{
@@ -87,12 +87,11 @@ export default function VideoDetail() {
                   width:'100%',
                   borderRadius: '50%'
                 }} src={ ChannelDetail?.snippet?.thumbnails?.default?.url? ChannelDetail?.snippet?.thumbnails?.default?.url : backupimg} alt="" />
-              </div>
+              </div> */}
             <Typography sx={{
               color:"#c4ccc6",
-              marginLeft:'20px',
-              fontSize:'20px',
-              padding:'15px 0px'
+              fontSize:{ md:'25px',xs:'18px'},
+              padding:'5px 0px'
             }}>
               {videoDetail.snippet.channelTitle}
             </Typography>
@@ -103,13 +102,10 @@ export default function VideoDetail() {
             }}>
             {parseInt(videoDetail.statistics.likeCount).toLocaleString()} likes
             </Typography> */}
-            <Box sx={{
-              paddingRight:'20px'
-            }}>
+            <Box>
             <Typography sx={{
               color:'#bcc2be',
-              fontSize:'15px',
-              marginLeft:'70px',
+              fontSize:{ md:'20px',xs:'12px'},
               paddingBottom:'30px'
             }}>
             {parseInt(videoDetail.statistics.viewCount).toLocaleString()} views

@@ -4,13 +4,19 @@
   }
 }
 @mixin sm{
-  @media screen and (max-width:550px) {
+  @media screen and (max-width:750px) {
     @content  ;
   }
 }
+
+
 .navstyle{
   transition: all 0.3s;
   cursor: pointer;
+  @include sm{
+    justify-content: space-between !important;
+    gap: -10px;
+  }
 }
 .navstyle:hover{
   box-shadow: 0px 2px 13px 8px rgba(99, 98, 98, 0.879);
@@ -19,11 +25,10 @@
 /* Search portion */
 .searchbarpos{
   display: flex;
-  justify-content: space-between;
   @include sm{
-    margin-right: 10000px;
-    justify-content: start;
-    align-items: start;
+position: absolute;
+top: 20px;
+left: 135px;
   }
 }
 .searchbackground{
@@ -59,6 +64,11 @@
   cursor:pointer;
   background: transparent;
 }
+.Side_container{
+ @include sm{
+  border: none !important;
+ }
+}
 .Side_container::-webkit-scrollbar{
   display: none;
 }
@@ -76,6 +86,50 @@
 }
 .Video{
   transition: all 0.3s !important;
+  position: relative !important;
+  @include sm{
+    width: 90vw;
+  }
+  .videohover{
+    position: absolute;
+    top: 0;
+    left: -3px;
+    .react1-player{
+      position: absolute;
+      left: -120px;
+      top: -25px !important;
+      height:205px !important ;
+      box-shadow: 10px 10px 50px 15px rgba(130, 115, 115, 0.879);
+      outline: none;
+      @include sm{
+        width: 100% !important;
+      }
+    }
+    .react2-player{
+      position: absolute;
+      top: -19px !important;
+      height:200px !important ;
+      box-shadow: 10px 10px 50px 15px rgba(130, 115, 115, 0.879);
+      border: 2px solid rgba(226, 205, 43, 0.395) !important;
+      outline: none;
+      display: none;
+    }
+
+  }
+  .videohover1{
+    position: absolute;
+    top: 0;
+    left: -3px;
+    display: none !important;
+    .react1-player{
+      position: absolute;
+      top: -19px !important;
+      height:200px !important ;
+      box-shadow: 10px 10px 50px 15px rgba(130, 115, 115, 0.879);
+      border: 2px solid rgba(226, 205, 43, 0.395) !important;
+      outline: none;
+    }
+  }
   /* border-radius: 20px !important; */
 }
 
@@ -116,10 +170,15 @@ display: none;
   width: 58.5vw !important;
   height: 71vh !important;
   margin-top: 40px !important;
-  margin-left: 40px !important;
+  margin-left: 20px !important;
   box-shadow: 10px 10px 50px 15px rgba(130, 115, 115, 0.879);
   border: 2px solid rgba(226, 205, 43, 0.395) !important;
   outline: none;
+  @include sm{
+    width: 90vw !important;
+    height: 250px !important;
+  }
+
 
 }
 
@@ -201,7 +260,9 @@ display: none;
   height: 100vh;
   scroll-behavior: smooth;
   overflow-x: hidden;
-
+  @include sm{
+    margin-left: 15px;      
+  }
 .loadingSkeleton {
   margin-bottom: 10px;
   justify-content: center;
@@ -212,9 +273,8 @@ display: none;
   margin-left: -20px;
   padding: 0 20px;
   .skeletonItem {
-      width: 310px;
+      width: 400px;
       flex-shrink: 0;
-      
       .posterBlock {
           border-radius: 12px;
           width: 100%;

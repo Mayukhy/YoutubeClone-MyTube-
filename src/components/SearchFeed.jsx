@@ -38,16 +38,16 @@ style={{
 }}>
    
   <Box>
-    <Typography variant='h4' style={{
-      marginLeft :"120px",
+    <Typography  variant='h4' style={{
       marginTop :'20px',
       marginBottom:0,
       color: "#faede3",
       fontWeight:"bold"
     }} sx={{
-       height: "70px", flex: 2,
-       paddingBottom:'20px'
-       
+       height: {md:"70px", xs:'auto'}, flex: 2,
+       paddingBottom:{md:'20px',xs:'10px'},
+       marginLeft :{md:"120px",xs:'50px'},
+       fontSize:{md:'40px',xs:'25px'}
     }}>
     Search Results For : <span> </span>
      <span>" {searchTerm} "</span>

@@ -1,3 +1,14 @@
+@mixin md{
+    @media screen and (min-width:1200px) {
+      @content  ;
+    }
+  }
+  @mixin sm{
+    @media screen and (max-width:750px) {
+      @content  ;
+    }
+  }
+
 .sclitems{
     display: flex;
     flex-direction: column;
@@ -7,7 +18,9 @@
     width: 90vw;
     scroll-behavior: smooth;
     overflow-x: hidden;
-  
+    @include sm{
+        margin-left: 30px;
+    }
   .loadingSkeleton {
     margin-bottom: 10px;
     justify-content: center;
@@ -18,9 +31,11 @@
     margin-left: -20px;
     padding: 0 20px;
     .skeletonItem {
-        width: 320px;
+        width: 420px;
         flex-shrink: 0;
-        
+        @include sm{
+            width:80vw;
+          }
         .posterBlock {
             border-radius: 12px;
             width: 100%;
