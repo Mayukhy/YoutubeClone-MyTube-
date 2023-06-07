@@ -1,8 +1,6 @@
 Link of This Project
 https://mytube2023.netlify.app/
 
-Another link Updated UI
-https://mytubeupdatedui.netlify.app/
 
 
 # Getting Started with Create React App
