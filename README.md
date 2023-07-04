@@ -13,11 +13,13 @@ Screenshots
 2
 ![MyTube - Google Chrome 6_15_2023 12_34_28 AM](https://github.com/Mayukhy/YoutubeClone-MyTube-/assets/107027766/a82b4550-242a-4152-992d-c63f519bfb32)
 
+
 3
 ![MyTube - Google Chrome 6_15_2023 12_35_56 AM](https://github.com/Mayukhy/YoutubeClone-MyTube-/assets/107027766/d1794da8-b3fc-4dd2-ac21-4dee2428d9b5)
+
+
 
 4
 ![MyTube - Google Chrome 6_15_2023 12_37_00 AM](https://github.com/Mayukhy/YoutubeClone-MyTube-/assets/107027766/4a11535c-598a-4faf-9291-bd58eb69e86e)
 
-5
-![MyTube - Google Chrome 6_15_2023 12_35_31 AM](https://github.com/Mayukhy/YoutubeClone-MyTube-/assets/107027766/ff4520ca-3cd8-4e2e-880a-f3fb085604dc)
+
