@@ -1,11 +1,11 @@
-#MyTube
+# MyTube
 MyTube is a Front end YouTube clone.
 'YouTube v3' rapid API is Used to fetch youtube videos, channels and Search results
 
 Link of This Project
 https://mytube2023.netlify.app/
 
-Screenshots
+# Screenshots
 
 1
 ![MyTube - Google Chrome 6_15_2023 12_33_18 AM](https://github.com/Mayukhy/YoutubeClone-MyTube-/assets/107027766/1e5e4083-fea5-425f-a953-191f719fd6bf)
